@@ -1,0 +1,110 @@
+body {
+    margin: 0 auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: white;
+    max-width: 2000px;
+}
+
+/*.wrapper {
+    background: url("images/tokyotower.jpg");
+    text-align: center;
+    background-size: cover;
+}*/
+
+
+.main {
+    padding: 0 30px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*background: rgb(224, 219, 219, 0.7);*/
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0;
+}
+
+
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    font-family: 'Podkova', serif;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #f97c80;
+}
+
+
+/*ul {
+    background: rgb(0, 0, 0, 0.5);
+    padding: 15px 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 0px 50px;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+}
+
+.nav:hover {
+    color: rgb(224, 219, 219);
+    transition: 0.5s;
+}*/
+
+.mainlink {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgb(78, 68, 209);
+    transition: color 0.5s ease;
+    
+}
+
+.mainlink:hover {
+    color: lightskyblue;
+}
+
+.imgmain {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.header {
+    background: url("images/tokyoheader.jpg") no-repeat;
+    height: 50vw;
+    max-width: 2000px;
+    background-size: cover;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+@media all and (max-width: 700px) {
+    .main {
+      grid-column: 1/4;
+      padding: 30px;
+    }
+
+    .header {
+        background-position: center;
+        min-height: 320px;
+    }
+
+    .content {
+        padding: 40px 0;
+    }
+  }
